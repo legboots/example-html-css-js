@@ -6,6 +6,13 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch: # Put here!!
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   prepare_release:
     name: Prepare release
